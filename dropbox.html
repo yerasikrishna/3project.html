@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Results</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border: 1px solid #ddd;
+		}
+
+		th {
+			background-color: #f2f2f2;
+			color: #333;
+		}
+
+		tr:hover {
+			background-color: #f5f5f5;
+		}
+
+		input[type=text] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			background-color: #f8f8f8;
+			font-size: 16px;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		.container {
+			padding: 20px;
+		}
+
+		h1 {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Search Results</h1>
+		<form action="#">
+			<label for="search">Search:</label>
+			<input type="text" id="search" name="search" placeholder="Enter a search term...">
+			<input type="submit" value="Search">
+		</form>
+		<table>
+			<thead>
+				<tr>
+					<th>Result #</th>
+					<th>Title</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Sample Result 1</td>
+					<td>This is a sample result for demonstration purposes.</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Sample Result 2</td>
+					<td>This is another sample result for demonstration purposes.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
